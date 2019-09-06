@@ -17,7 +17,7 @@
 
   
 
-  <title>昨日星辰</title>
+  <title>﻿去重以及替换 | 昨日星辰</title>
 
   
 
@@ -71,7 +71,7 @@
   </div>
 </header>
 
-    <section id="main"><!-- 首页 -->
+    <section id="main"><!-- 文章详情页 -->
 
 <!-- banner container -->
 <div class="banner-container" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)">
@@ -79,9 +79,6 @@
 
     
     
-      <h1 class="header-title"><a href="/">昨日星辰</a></h1>
-      
-    
 
     
     
@@ -94,6 +91,20 @@
     
 
     
+    
+      <h1 class="header-title"><a href="/2019/09/06/去重以及替换/">﻿去重以及替换</a></h1>
+      <h2 class="header-subtitle">
+        
+          
+          <!--
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2019-09-06T03:31:12.602Z" itemprop="datePublished">2019-09-06 11:31:12</time>
+  </a>
+
+          -->
+        
+      </h2>
     
 
     
@@ -101,66 +112,51 @@
   </div>
 </div>
 
-<!-- post list container -->
+<!-- 文章内容 -->
+
 <div class="body-container">
-  <div class="main-container article-list">
-    <div class="card-container card-articles">
-      <div class="card-wrap">
-        
-          
-          <div class="card-item">
-            <article>
-              
-              
-                <a class="article-link" href="/2019/09/06/去重以及替换/" itemprop="url"></a>
-              
-              <h2 class="article-title">﻿去重以及替换</h2>
-              <div class="article-meta">
-                <strong>Liquor</strong>
-                <span>发布于</span>
-                
-  <a href="/2019/09/06/去重以及替换/" class="article-date">
-    <time datetime="2019-09-06T03:31:12.602Z" itemprop="datePublished">2019-09-06</time>
-  </a>
+  <article id="article-content" class="main-container article-content zoom">
+    
+    
 
-              </div>
-              <div class="article-category">
-                
-              </div>
-            </article>
-          </div>
-        
-          
-          <div class="card-item">
-            <article>
-              
-              
-                <a class="article-link" href="/2019/09/04/hello-world/" itemprop="url"></a>
-              
-              <h2 class="article-title">Hello World</h2>
-              <div class="article-meta">
-                <strong>Liquor</strong>
-                <span>发布于</span>
-                
-  <a href="/2019/09/04/hello-world/" class="article-date">
-    <time datetime="2019-09-04T09:50:52.365Z" itemprop="datePublished">2019-09-04</time>
-  </a>
+    <div class="article-entry">
+      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">s = pd.Series([1,1,1,1,2,2,2,3,4,5,5,5,5])</span><br><span class="line">print(s.duplicated())</span><br><span class="line">print(s[s.duplicated()==False])</span><br><span class="line">s_re = s.drop_duplicates()</span><br><span class="line">print(s_re)</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(&#123;&apos;key1&apos;:[&apos;a&apos;,&apos;a&apos;,3,4,5],</span><br><span class="line">                  &apos;key2&apos;:[&apos;a&apos;,&apos;a&apos;,&apos;b&apos;,&apos;b&apos;,&apos;c&apos;]&#125;)</span><br><span class="line">df.duplicated()</span><br><span class="line">df[&apos;key2&apos;].duplicated()</span><br></pre></td></tr></table></figure>
 
-              </div>
-              <div class="article-category">
-                
-              </div>
-            </article>
-          </div>
-        
-      </div>
+<p>替换<br>可一次性替换一个值或多个值<br>可传入列表或字典</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = pd.Series(list(&apos;ascaazsd&apos;))</span><br><span class="line">s.replace(&apos;a&apos;,np.nan)</span><br><span class="line">s.replace([&apos;a&apos;,&apos;s&apos;],np.nan)</span><br><span class="line">s.replace(&#123;&apos;a&apos;:&apos;hello world&apos;,&apos;s&apos;:123&#125;)</span><br></pre></td></tr></table></figure>
+
+
     </div>
+
+    <div class="article-footer">
+      
+    </div>
+
+    <div class="article-navs">
+      
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2019/09/04/hello-world/"></a>
+          <div class="article-nav-caption">Older</div>
+          <div class="article-nav-title">Hello World</div>
+        </article>
+      </div>
+    
   </div>
-</div>
+</nav>
 
-<!-- page container -->
+    </div>
+    
+    
+  <div id="comment-container" class="comment-container"></div>
 
-</section>
+  </article>
+</div></section>
 
     <!-- footer container -->
 <footer id="footer" class="footer">
