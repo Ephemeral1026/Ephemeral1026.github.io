@@ -19,7 +19,7 @@
 
   
 
-  <title>Day1 汉诺塔 | 昨日星辰</title>
+  <title>MT库编码库为待编的解决办法 | 昨日星辰</title>
 
   
 
@@ -96,14 +96,14 @@
 
     
     
-      <h1 class="header-title"><a href="/2019/09/18/Day1 汉诺塔/">Day1 汉诺塔</a></h1>
+      <h1 class="header-title"><a href="/2019/10/23/MT库编码库为待编的解决办法/">MT库编码库为待编的解决办法</a></h1>
       <h2 class="header-subtitle">
         
-          <a class="article-category-link" href="/categories/算法/">算法</a>
+          
           <!--
           
   <a href="javascript:;" class="article-date">
-    <time datetime="2019-09-18T03:14:05.000Z" itemprop="datePublished">2019-09-18 11:14:05</time>
+    <time datetime="2019-10-23T03:47:05.000Z" itemprop="datePublished">2019-10-23 11:47:05</time>
   </a>
 
           -->
@@ -122,22 +122,29 @@
   <article id="article-content" class="main-container article-content zoom">
     
     
+    <div class="article-gallery">
+      
+<div class="article-gallery-photos">
+  
+    <a class="article-gallery-photos-img" href="/css/images/timg2.jpg" target="_blank" rel="gallery-ck2eie43h000634p1rqlw1f9k">
+      <img src="/css/images/timg2.jpg" gallery itemprop="image">
+    </a>
+  
+</div>
+    </div>
+    
 
     <div class="article-entry">
-      <p>汉诺塔问题是一个经典的问题。汉诺塔（Hanoi Tower），又称河内塔，源于印度一个古老传说。大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞着N片黄金圆盘。大梵天命令婆罗门把圆盘从下面开始按大小顺序重新摆放在另一根柱子上。并且规定，任何时候，在小圆盘上都不能放大圆盘，且在三根柱子之间一次只能移动一个圆盘。问应该如何操作？</p>
-<p>试想一下，如果我们要将最大的圆盘移动到最右边的柱子上。我们需要把除此圆盘的其他圆盘先移动到中间的柱子上。因此这个问题就变成了如何将 N-1 个圆盘移动到中间的柱子上。很容易我们就想到了递归的方法。</p>
-<p>将 N 个圆盘从左边柱子移动到右边柱子：<br>[递归的]将 N-1 个圆盘从左边柱子移动到中间柱子。<br>将最大的圆盘从左边柱子移动到右边柱子。<br>[递归的]将 N-1 个圆盘从中间柱子移动到右边柱子。</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs undefined">def hanoi(height,<span class="hljs-keyword">left</span>=<span class="hljs-string">'left'</span>,<span class="hljs-keyword">right</span>=<span class="hljs-string">'right'</span>,middle=<span class="hljs-string">'middle'</span>):<br>    <span class="hljs-keyword">if</span> heigh<span class="hljs-variable">t:</span><br>        hanoi(height-<span class="hljs-number">1</span>,<span class="hljs-keyword">left</span>,middle,<span class="hljs-keyword">right</span>)<br>        <span class="hljs-keyword">print</span>(<span class="hljs-keyword">left</span>,<span class="hljs-string">'---&gt;'</span>,<span class="hljs-keyword">right</span>)<br>        hanoi(height-<span class="hljs-number">1</span>,middle,<span class="hljs-keyword">right</span>,<span class="hljs-keyword">left</span>)<br>hanoi(<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20190918110904166.png" alt="在这里插入图片描述"></p>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs undefined">def <span class="hljs-built_in">move</span>(n,a,b,c):<br>    <span class="hljs-built_in">if</span> n == <span class="hljs-number">1</span>:<br>        <span class="hljs-built_in">print</span>(a,<span class="hljs-string">'---&gt;'</span>,c)<br>    <span class="hljs-built_in">else</span>:<br>        <span class="hljs-built_in">move</span>(n<span class="hljs-number">-1</span>,a,c,b)<br>        <span class="hljs-built_in">print</span>(a,<span class="hljs-string">'---&gt;'</span>,c)<br>        <span class="hljs-built_in">move</span>(n<span class="hljs-number">-1</span>,b,a,c)<br><span class="hljs-built_in">move</span>(<span class="hljs-number">3</span>,<span class="hljs-string">'A'</span>,<span class="hljs-string">'B'</span>,<span class="hljs-string">'C'</span>)<br></code></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/2019091811092026.png" alt="在这里插入图片描述"></p>
+      <p>1.首先筛选清单中为待编的数据，单独整理出一个表<br>2.处理好字段之后进入平台的百事门店库统一编码（字段一定要仔细核对）<br><img src="https://img-blog.csdnimg.cn/20191021141853174.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU0ODEzNQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>3.选择文件导入（如果新增数据与导入数据数量不一致，说明这些在门店库中已存在该编码）<br><img src="https://img-blog.csdnimg.cn/20191021141604112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU0ODEzNQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>4.新增完成之后进行地址解析，显示地址解析已完成即可进行下一步<br><img src="https://img-blog.csdnimg.cn/20191021141807775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU0ODEzNQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>5.最后一步是百事班表的导入，把第二步的表拿过来导入即可<br>报错原因：</p>
+<ol>
+<li>直接进入到百事班表导入</li>
+<li>没有去除门店编码-百事<br><img src="https://img-blog.csdnimg.cn/20191021142348559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU0ODEzNQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>不报错点击结果提示可看到导入结果<br><img src="https://img-blog.csdnimg.cn/20191021142405737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU0ODEzNQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ol>
 
     </div>
 
     <div class="article-footer">
-      <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python100天算法/">#Python100天算法</a></li></ul>
+      
     </div>
 
     <div class="article-navs">
@@ -148,9 +155,9 @@
       <div class="card-item">
         <article>
           
-          <a class="card-link article-nav-link" href="/2019/10/23/MT库编码库为待编的解决办法/"></a>
+          <a class="card-link article-nav-link" href="/2019/10/31/MySQL运算符/"></a>
           <div class="article-nav-caption">Newer</div>
-          <div class="article-nav-title">MT库编码库为待编的解决办法</div>
+          <div class="article-nav-title">MySQL运算符</div>
         </article>
       </div>
     
@@ -158,9 +165,9 @@
       <div class="card-item">
         <article>
           
-          <a class="card-link article-nav-link" href="/2019/09/09/pandas.Series.all/"></a>
+          <a class="card-link article-nav-link" href="/2019/09/18/Day1 汉诺塔/"></a>
           <div class="article-nav-caption">Older</div>
-          <div class="article-nav-title">pandas.Series.all</div>
+          <div class="article-nav-title">Day1 汉诺塔</div>
         </article>
       </div>
     
